@@ -123,4 +123,52 @@ This program is easy to navigate once you get used to it. you can run the progra
 
 `run alteruserp username1234:admin123`
 
+> to ping a database 
+
+`module 1 ping`
+
+> to clear the terminal
+
+`module 1 cls` or `module 1 clear`
+
+> to authenticate a database 
+
+`module 1 auth`
+
+> to view all settings
+
+`module 1 settings`
+
+> to view console help 
+
+`module 1 help`
+
+> Loading custom configuration files
+
+take the config file as database settings
+
+
+**config.yaml**
+
+```yaml
+Database_Information:
+         Database_Name: "postgres"
+         Database_Host: "127.0.0.1"
+         Database_Port: "5432"
+         Database_Pass: "admin123"
+         Database_SSL: "disable"
+         Database_User: "postgres"
+```
+
+we can load this file into the settings like so 
+
+```
+load settingsf config.yaml 
+```
+
+> loading `.SQL` files for execution
+
+```
+load dbqueryef
+```
 
