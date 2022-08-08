@@ -169,6 +169,6 @@ load settingsf config.yaml
 > loading `.SQL` files for execution
 
 ```
-load dbqueryef
+load dbqueryef filename.SQL
 ```
 
